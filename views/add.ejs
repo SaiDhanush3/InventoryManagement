@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Add Footwear</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- general form elements -->
+    <div class="card card-warning">
+        <div class="card-header">
+          <h3 class="card-title">Add New Footwear</h3>
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <form action= "/AddData" method="POST">
+          <div class="card-body">
+
+            <div class="form-group row">
+              <label for="productId" class="col-sm-2 col-form-label">Footwear ID :</label>
+              <div class="col-sm-2">
+                  <input type="number" class="form-control" id="productId" name="pid" placeholder="Enter Footwear ID" required>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="brand" class="col-sm-2 col-form-label">Footwear Brand :</label>
+              <div class="col-sm-2">
+                  <input type="text" class="form-control" id="brand" name="brand" placeholder="Enter Footwear Brand " required>     
+              </div>
+            </div>
+
+        <div class="form-group row">
+            <label for="category" class="col-sm-2 col-form-label">Footwear Category :</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="category" name="category" placeholder="Enter Footwear Category " required>     
+            </div>
+          </div>
+
+            <div class="form-group row">
+              <label for="type" class="col-sm-2 col-form-label"> Type of the footwear:</label>
+              <div class="col-sm-2">
+                  <input type="text" class="form-control" id="type" name="type" placeholder="Enter Footwear Type" required>
+              </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="size" class="col-sm-2 col-form-label">Footwear Size :</label>
+                <div class="col-sm-2">
+                    <input type="number" class="form-control" id="size" name="size" placeholder="Enter Footwear Size " required>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="stock" class="col-sm-2 col-form-label" > Footwear Quantity :</label>
+                <div class="col-sm-2">
+                    <input type="number" class="form-control" id="stock" name="stock" placeholder="Enter Footwear Quantity" required>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="costPrice" class="col-sm-2 col-form-label"> Footwear Cost Price :</label>
+                <div class="col-sm-2">
+                    <input type="number" class="form-control" id="costPrice" name="cp" placeholder="Enter Footwear cost" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="sellingPrice" class="col-sm-2 col-form-label">Footwear Selling price :</label>
+                <div class="col-sm-2">
+                    <input type="number" class="form-control" id="sellingPrice" name="sp" placeholder="Enter Footwear selling price " required>
+                </div>
+              </div>
+
+          </div>
+          <!-- /.card-body -->
+
+          <div class="card-footer">
+            <button class="btn btn-primary" id="ADD"> Add Footwear</button>
+            <a class="btn btn-primary" id="Hm" href="/"> Home</a>
+          </div>
+          
+        </form>
+      </div>
+      <!-- /.card -->
+      
+</body>
+
+</html>
